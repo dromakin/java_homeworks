@@ -1,0 +1,2 @@
+language = "java10"
+run = "javac ./homework1/src/com.company/Main.java && java ./homework1/src/com.company/Main.java"
