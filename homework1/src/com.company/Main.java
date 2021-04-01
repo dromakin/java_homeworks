@@ -91,7 +91,7 @@ public class Main {
         }
     }
 
-    public static void starter() throws IOException {
+    public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         while (true) {
@@ -125,10 +125,5 @@ public class Main {
                 break;
             }
         }
-    }
-
-
-    public static void main(String[] args) throws IOException {
-        starter();
     }
 }
