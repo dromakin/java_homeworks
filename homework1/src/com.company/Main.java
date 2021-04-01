@@ -27,6 +27,10 @@ public class Main {
         public static int sum_max = 0;
         public static int sum_min = 0;
 
+        public static int getSumTime(int _days, int _hours, int _minutes) {
+            return 24 * _days * 3600 + _hours * 3600 + _minutes * 60;
+        }
+
         public static void task2(BufferedReader reader) {
 
             try {
@@ -45,7 +49,7 @@ public class Main {
                 int local_m = Integer.parseInt(reader.readLine());
                 minutes += local_m;
 
-                int sum = 24 * local_d * 3600 + local_h * 3600 + local_m * 60;
+                int sum = Task2.getSumTime(local_d, local_h, local_m);
                 if (sum >= sum_max) {
                     sum_max = sum;
                 } else if (sum <= sum_min) {
@@ -55,9 +59,8 @@ public class Main {
                 System.out.println("Для выхода напишите end, а для дальнейшей записи - enter:");
                 String stop = reader.readLine();
 
-
                 if (stop.equals("end")) {
-                    System.out.println("Всего потребуется: " + (24 * days * 3600 + hours * 3600 + minutes * 60));
+                    System.out.println("Всего потребуется: " + Task2.getSumTime(days, hours, minutes));
                     System.out.println("Самая продолжительная задача займет: " + sum_max);
                     System.out.println("Самая короткая задача займет: " + sum_min);
                 } else {
