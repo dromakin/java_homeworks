@@ -17,24 +17,20 @@ public class Main {
 
             if (!str.equals("end")) {
                 switch (str) {
-                    case "1": {
+                    case "1":
                         Task1.task1(reader);
                         break;
-                    }
 
-                    case "2": {
+                    case "2":
                         Task2.task2(reader);
                         break;
-                    }
 
-                    case "3": {
+                    case "3":
                         Task3.task3(reader);
                         break;
-                    }
 
-                    default: {
+                    default:
                         System.out.println("1 or 2 or 3");
-                    }
                 }
             } else {
 
