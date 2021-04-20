@@ -1,3 +1,4 @@
 # java_homeworks
 
-[My java homeworks](https://replit.com/@dromakin/javahomeworks)
+## Homeworks
+1. [Run homeworks on repl]()
