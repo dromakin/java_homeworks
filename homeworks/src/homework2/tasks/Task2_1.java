@@ -1,4 +1,4 @@
-package com.dromakin.tasks;
+package homework2.tasks;
 
 public class Task2_1 {
 
@@ -40,6 +40,4 @@ public class Task2_1 {
         System.out.println(sample3);
     }
 
-    public static void main(String[] args) {
-    }
 }

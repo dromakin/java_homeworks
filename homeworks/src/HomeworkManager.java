@@ -1,34 +1,28 @@
-package com.dromakin.starter;
-
-import com.dromakin.tasks.Task1;
-import com.dromakin.tasks.Task2;
-import com.dromakin.tasks.Task3;
+import homework1.Homework_1;
+import homework2.Homework_2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Starter {
+
+public class HomeworkManager {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         while (true) {
 
-            System.out.println("Введите номер задачи (1, 2, 3) или напишите end:");
+            System.out.println("Введите номер домашнего задания (1, 2) или напишите end:");
             String str = reader.readLine();
 
             if (!str.equals("end")) {
                 switch (str) {
                     case "1":
-                        Task1.task1(reader);
+                        Homework_1.run();
                         break;
 
                     case "2":
-                        Task2.task2(reader);
-                        break;
-
-                    case "3":
-                        Task3.task3(reader);
+                        Homework_2.run();
                         break;
 
                     default:

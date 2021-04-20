@@ -1,16 +1,16 @@
-package com.dromakin.starter;
+package homework2;
 
-import com.dromakin.tasks.Task1;
-import com.dromakin.tasks.Task2_1;
-import com.dromakin.tasks.Task2_2;
-import com.dromakin.tasks.Task2_3;
+import homework2.tasks.Task1;
+import homework2.tasks.Task2_1;
+import homework2.tasks.Task2_2;
+import homework2.tasks.Task2_3;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Starter {
-    public static void main(String[] args) throws IOException {
+public class Homework_2 {
+    public static void run() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         while (true) {

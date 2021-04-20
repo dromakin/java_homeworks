@@ -1,13 +1,13 @@
-package com.dromakin.tasks;
+package homework2.tasks;
 
 public class Task2_2 {
 
-    static class Box<K,T> {
+    static class Box<K, T> {
 
         private K key;
         private T obj;
 
-        public Box(K key, T obj){
+        public Box(K key, T obj) {
             this.key = key;
             this.obj = obj;
         }
@@ -42,6 +42,4 @@ public class Task2_2 {
         System.out.println(sample2);
     }
 
-    public static void main(String[] args) {
-    }
 }

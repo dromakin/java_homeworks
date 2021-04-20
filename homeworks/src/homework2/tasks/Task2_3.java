@@ -1,4 +1,4 @@
-package com.dromakin.tasks;
+package homework2.tasks;
 
 public class Task2_3 {
 
@@ -39,7 +39,7 @@ public class Task2_3 {
         private K key;
         private T obj;
 
-        public FruitBox(K key, T obj){
+        public FruitBox(K key, T obj) {
             this.key = key;
             this.obj = obj;
         }
@@ -69,7 +69,7 @@ public class Task2_3 {
         private K key;
         private T obj;
 
-        public VegetableBox(K key, T obj){
+        public VegetableBox(K key, T obj) {
             this.key = key;
             this.obj = obj;
         }
@@ -108,6 +108,4 @@ public class Task2_3 {
         cabbageBox.getObj().printClass();
     }
 
-    public static void main(String[] args) {
-    }
 }

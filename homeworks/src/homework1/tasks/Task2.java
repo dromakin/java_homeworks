@@ -1,4 +1,4 @@
-package com.dromakin.tasks;
+package homework1.tasks;
 
 import java.io.BufferedReader;
 import java.io.IOException;
