@@ -1,4 +1,4 @@
-package generics;
+package com.dromakin.tasks;
 
 public class Task2_2 {
 
