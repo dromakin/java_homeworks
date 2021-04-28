@@ -1,49 +1,43 @@
-package homework2;
+package homework1;
 
-import homework2.tasks.Task1;
-import homework2.tasks.Task2_1;
-import homework2.tasks.Task2_2;
-import homework2.tasks.Task2_3;
+import homework1.tasks.Task1;
+import homework1.tasks.Task2;
+import homework1.tasks.Task3;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Homework_2 {
+public class Homework1 {
     public static void run() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         while (true) {
 
-            System.out.println("Введите номер задачи (1, 2, 3, 4) или напишите end:");
+            System.out.println("Введите номер задачи (1, 2, 3) или напишите end:");
             String str = reader.readLine();
 
             if (!str.equals("end")) {
                 switch (str) {
                     case "1":
-                        Task1.task1();
+                        Task1.task1(reader);
                         break;
 
                     case "2":
-                        Task2_1.task2_1();
+                        Task2.task2(reader);
                         break;
 
                     case "3":
-                        Task2_2.task2_2();
-                        break;
-
-
-                    case "4":
-                        Task2_3.task2_3();
+                        Task3.task3(reader);
                         break;
 
                     default:
-                        System.out.println("1 or 2 or 3 or 4");
+                        System.out.println("1 or 2 or 3");
                 }
             } else {
+
                 break;
             }
         }
     }
 }
-

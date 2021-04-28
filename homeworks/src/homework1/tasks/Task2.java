@@ -44,9 +44,11 @@ public class Task2 {
             String stop = reader.readLine();
 
             if (stop.equals("end")) {
-                System.out.println("Всего потребуется: " + Task2.getSumTime(days, hours, minutes));
-                System.out.println("Самая продолжительная задача займет: " + sum_max);
-                System.out.println("Самая короткая задача займет: " + sum_min);
+                StringBuilder stringBuilder = new StringBuilder();
+                stringBuilder.append("Всего потребуется: ").append(Task2.getSumTime(days, hours, minutes));
+                stringBuilder.append("\nСамая продолжительная задача займет: ").append(sum_max);
+                stringBuilder.append("\nСамая короткая задача займет: ").append(sum_min);
+                System.out.println(stringBuilder.toString());
             } else {
                 task2(reader);
             }

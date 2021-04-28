@@ -57,3 +57,6 @@ public class Main {
 Box{key=имя; keyType=java.lang.String, obj=Нетология; objType=java.lang.String}
 Box{key=1; keyType=java.lang.Integer, obj=true; objType=java.lang.Boolean}
 ```
+
+## Go back to README
+[README](./../../../README.md)

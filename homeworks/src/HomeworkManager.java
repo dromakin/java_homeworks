@@ -1,5 +1,5 @@
-import homework1.Homework_1;
-import homework2.Homework_2;
+import homework1.Homework1;
+import homework2.Homework2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -18,15 +18,15 @@ public class HomeworkManager {
             if (!str.equals("end")) {
                 switch (str) {
                     case "1":
-                        Homework_1.run();
+                        Homework1.run();
                         break;
 
                     case "2":
-                        Homework_2.run();
+                        Homework2.run();
                         break;
 
                     default:
-                        System.out.println("1 or 2 or 3");
+                        System.out.println("1 or 2");
                 }
             } else {
 
